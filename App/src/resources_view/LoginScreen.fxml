@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <children>
+     <ImageView fitHeight="827.0" fitWidth="830.0" layoutX="-14.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+   <image>
+      <Image url="@../images/LoginPage.jpg" />
+   </image>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+	 </ImageView>
+      <Button fx:id="nextButton" layoutX="203.0" layoutY="113.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="68.0" prefWidth="162.0" rotate="10.0" style="-fx-background-color: transparent;" text="Next ♬" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="501.0" layoutY="444.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="46.0" prefWidth="183.0" text="Login" textFill="#ff1100" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="436.0" layoutY="262.0" prefHeight="18.0" prefWidth="183.0" promptText="Username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="enterPasswordField" alignment="CENTER" layoutX="447.0" layoutY="350.0" prefHeight="46.0" prefWidth="238.0" promptText="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="519.0" layoutY="539.0" mnemonicParsing="false" onAction="#registerButton" prefHeight="68.0" prefWidth="162.0" text="Register">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.3295454184214275" cycleMethod="REFLECT" focusAngle="-56.31" focusDistance="-0.2798165662573018" radius="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7684210538864136" green="0.07399610430002213" blue="0.07399610430002213" opacity="0.8199999928474426" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+   </children>
+</AnchorPane>

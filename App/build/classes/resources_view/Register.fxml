@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.191" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SignUpController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="846.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/RegisterForm.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="446.0" layoutY="361.0" prefHeight="46.0" prefWidth="166.0" promptText="Password" rotate="10.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </PasswordField>
+      <Button alignment="CENTER" layoutX="171.0" layoutY="695.0" mnemonicParsing="false" onAction="#signUpButton" prefHeight="50.0" prefWidth="174.0" rotate="-2.1" style="-fx-background-color: transparent;" text="Sign Up!" textFill="WHITE" textOverrun="LEADING_WORD_ELLIPSIS">
+         <font>
+            <Font name="Lucida Sans Unicode" size="26.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="146.0" mnemonicParsing="false" onAction="#goBack" prefHeight="85.0" prefWidth="100.0" rotate="10.0" style="-fx-background-color: transparent;" text="🔙">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.7168560606060606">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8980392217636108" green="0.8078431487083435" blue="0.8627451062202454" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <TextField fx:id="usernameRegistrationField" alignment="CENTER" layoutX="421.0" layoutY="294.0" prefHeight="51.0" prefWidth="205.0" promptText="Username" rotate="10.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="firstNameField" layoutX="393.0" layoutY="175.0" prefHeight="43.0" prefWidth="255.0" promptText="First Name" rotate="10.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="lastNameField" layoutX="387.0" layoutY="232.0" prefHeight="43.0" prefWidth="250.0" promptText="Last Name" rotate="10.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Label layoutX="212.0" layoutY="2.0" opacity="0.93" prefHeight="106.0" prefWidth="400.0" text="Register Form">
+         <font>
+            <Font name="Javanese Text" size="55.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.2577092721073638" centerY="0.5" focusAngle="-146.31" focusDistance="-0.07339451291145538" radius="0.49082569682270016">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9473684430122375" green="0.8947368264198303" blue="0.9201754331588745" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

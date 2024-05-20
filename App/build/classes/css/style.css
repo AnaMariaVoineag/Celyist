@@ -1,0 +1,21 @@
+.primary_color {
+   -fx-background-color: #ffffff;
+}
+
+.secondary-color {
+    -fx-background-color: #deaae9;
+}
+
+.top-border{
+	-fx-border-color: #ffffff;
+	-fx-border-width: 1 0 0 0;
+}
+
+.selected{
+    -fx-border-color: #d2acc8;
+    -fx-border-width: 0 0 0 5
+}
+
+.scroll-pane > .viewport{
+    -fx-background-color: #deaae9;
+}
