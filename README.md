@@ -1,6 +1,6 @@
 # Celyist
 
-Celyist is a desktop music app and its name is based on a character called Celina who can have a good or a bad behavior. The user has the chance to know if the character is good or bad depending on what kind of music the person is listening. The user is welcomed with a song everytime he opens the app.
+Celyist is a desktop music app and its name is based on a character called Celina who can have a good or a bad behavior. The user has the chance to know if the character is good or bad depending on what kind of music the person is listening depending on what mode (purple or dark) the user dives in. 
 
 # Technologies
 Backend: Java, JavaFX, JPA, Design Patterns for Java (DAO)
