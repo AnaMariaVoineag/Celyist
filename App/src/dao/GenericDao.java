@@ -69,6 +69,7 @@ public abstract class GenericDao<T> {
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<T> findAll() {
 		EntityManager em = getEntityManager();
 		try {

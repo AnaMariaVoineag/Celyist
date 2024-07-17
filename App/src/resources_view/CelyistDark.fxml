@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="890.0" prefWidth="1315.0" styleClass="secondary-color" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CelyistDarkController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="232.0" spacing="10.0" styleClass="secondary-color" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons/ic_more.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <AnchorPane prefHeight="128.0" prefWidth="286.0">
+               <children>
+                  <ImageView fitHeight="189.0" fitWidth="164.0" layoutX="39.0" layoutY="-48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/cerc.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="lightTheme" layoutX="47.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchMode" prefHeight="110.0" prefWidth="138.0" style="-fx-background-color: transparent;" />
+               </children>
+            </AnchorPane>
+            <VBox prefHeight="192.0" prefWidth="232.0" spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" fillHeight="false" prefHeight="50.0" prefWidth="200.0" spacing="20.0" styleClass="selected" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/ic_home.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="66.0" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/ic_browse.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                        <Label prefHeight="27.0" prefWidth="66.0" text="Explore" textFill="#a1a1a1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" fillHeight="false" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons/ic_radio.png" />
+                           </image>
+                        </ImageView>
+                        <Label contentDisplay="CENTER" prefHeight="27.0" prefWidth="67.0" text="Radio" textFill="#a1a1a1">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="246.0" prefWidth="232.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="192.0" text="YOUR LIBRARY" textFill="#a1a1a1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="10.0" prefHeight="40.0" prefWidth="192.0" text="Made For You" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="58.0" prefHeight="40.0" prefWidth="192.0" text="Recently Played" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="98.0" prefHeight="40.0" prefWidth="192.0" text="Liked Celsongs" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="138.0" prefHeight="40.0" prefWidth="192.0" text="Celalbums" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="178.0" prefHeight="40.0" prefWidth="192.0" text="Celartists" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </VBox>
+            <Label prefHeight="29.0" prefWidth="192.0" text="CELYISTS" textFill="#a1a1a1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <Pane prefHeight="105.0" prefWidth="232.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="106.0" prefWidth="245.0">
+                     <children>
+                        <VBox prefHeight="106.0" prefWidth="34.0" />
+                        <ImageView fitHeight="81.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/albums_bad/break_your_heart.jpg" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER" prefHeight="106.0" prefWidth="163.0">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="116.0" text="Break Your Heart" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="15.0" prefWidth="114.0" text="Taio Cruz" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="42.0" prefWidth="106.0">
+                                 <children>
+                                    <ImageView fitHeight="30.0" fitWidth="22.0" layoutX="88.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/icons/ic_love.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children></Pane>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="232.0" spacing="10.0" styleClass="top-border" stylesheets="@../css/style.css">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons/ic_add.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="40.0" prefWidth="104.0" text="New Celyist" textFill="#a1a1a1">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="890.0" prefWidth="1017.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="1100.0">
+               <children>
+                  <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="650.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="35.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="276.0" prefWidth="984.0" spacing="20.0">
+               <children>
+                  <ImageView fitHeight="281.0" fitWidth="1083.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/good_banner.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <ScrollPane prefHeight="200.0" prefWidth="1083.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox prefHeight="570.0" prefWidth="1680.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="149.0" text="Recently Played" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <ScrollPane fitToWidth="true" minViewportHeight="270.0" prefHeight="229.0" prefWidth="1059.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <HBox fx:id="recentlyPlayedSongs" prefHeight="0.0" prefWidth="0.0" spacing="30.0" />
+                           </content></ScrollPane>
+                        <Label prefHeight="27.0" prefWidth="88.0" text="Favorite" textFill="WHITE">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fitToWidth="true" minViewportHeight="270.0" prefHeight="229.0" prefWidth="1059.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <HBox fx:id="favoriteSongs" prefHeight="0.0" prefWidth="0.0" spacing="30.0" />
+                           </content>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></ScrollPane>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

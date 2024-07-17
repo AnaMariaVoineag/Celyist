@@ -40,12 +40,9 @@ public class SignUpController extends Controller {
         try {
             userService.addUser(usernameRegistrationField.getText(), passwordField.getText(),
                     firstNameField.getText(), lastNameField.getText());
-            System.out.println("User registered successfully!");
-            informationAlert(event);
+            informationAlert(event, "Yayy! User " + usernameRegistrationField.getText() + " registered successfully!");
         } catch (OopsException e) {
-            String errorMessage = e.getMessage();
-            System.out.println("Error: " + errorMessage);
-            warningAlert(event, errorMessage);
+            warningAlert(event,  "User " + usernameRegistrationField.getText() + " already exists!");
         }
     }
 
@@ -59,11 +56,10 @@ public class SignUpController extends Controller {
         alert.showAndWait();
     }
 
-    @FXML
-    public void informationAlert(ActionEvent event) {
+    public void informationAlert(ActionEvent event, String informationAlert) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Information Dialog");
-        alert.setContentText("Yayy! User " + usernameRegistrationField.getText() + " registered successfully!");
+        alert.setContentText(informationAlert);
         alert.getDialogPane().getButtonTypes().add(ButtonType.CLOSE);
         alert.setHeaderText("Information alert");
         alert.getDialogPane().setPrefSize(480, 320);

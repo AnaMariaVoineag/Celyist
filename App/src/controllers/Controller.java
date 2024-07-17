@@ -30,6 +30,7 @@ public class Controller implements Initializable {
 
 	@FXML
 	private TextField usernameTextField;
+	public static String username;
 
 	@FXML
 	private PasswordField enterPasswordField;
@@ -48,7 +49,7 @@ public class Controller implements Initializable {
 		UserService userService = new UserService();
 		if (userService.findUser(usernameTextField.getText(), enterPasswordField.getText()) != null){
 			
-			String username = usernameTextField.getText();
+			username = usernameTextField.getText();
 			
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources_view/Celyist.fxml"));
 			root = loader.load();

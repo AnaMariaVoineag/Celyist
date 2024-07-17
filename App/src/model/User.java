@@ -3,44 +3,44 @@ package model;
 import java.io.Serializable;
 import javax.persistence.*;
 
+
 /**
  * The persistent class for the users database table.
  * 
  */
 @Entity
-@Table(name = "users")
-@NamedQuery(name = "User.findAll", query = "SELECT u FROM User u")
+@Table(name="users")
+@NamedQuery(name="User.findAll", query="SELECT u FROM User u")
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "user_id")
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="user_id")
 	private int userId;
 
-	@Column(name = "first_name")
+	@Column(name="first_name")
 	private String firstName;
 
-	@Column(name = "last_name")
+	@Column(name="last_name")
 	private String lastName;
 
+	@Column(name="password")
 	private String password;
 
+	@Column(name="username")
 	private String username;
 
 	public User() {
-		super();
 	}
 
-	
-	public User(String firstName, String lastName, String password, String username) {
-		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.password = password;
-		this.username = username;
+	public User(String user, String pass, String first, String last) {
+		this.username = user;
+		this.password = pass;
+		this.firstName = first;
+		this.lastName = last;
+		
 	}
-
 
 	public int getUserId() {
 		return this.userId;

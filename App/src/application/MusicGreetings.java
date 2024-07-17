@@ -7,8 +7,9 @@ public enum MusicGreetings {
     BONJOUR("valiente"),
     BUNA("rain Over Me"),
     CIAO("e Il Momento Di Ballare"),
-    AHOJ("hice Todo Mal"),
-    ALOHA("la Differenza Tra Me E Te");
+    AHOI("hice Todo Mal"),
+    ALOHA("la Differenza Tra Me E Te"),
+	ARIGATO("make it Shine");
 
     private final String songTitle;
 

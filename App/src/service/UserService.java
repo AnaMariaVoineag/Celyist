@@ -46,8 +46,7 @@ public class UserService {
 		return u;
 	}
 	
-	
-	
+
 	public User addUser(String user, String pass, String first, String last) throws OopsException {
 		List<User> users = userDao.find(user);
 		if (user == null || user.isEmpty()) {
@@ -57,7 +56,6 @@ public class UserService {
 		if (!users.isEmpty()) {
 			throw new OopsException("Oops! User already exists!");
 		} 
-		
 		
 		User newUser = new User(user, pass, first, last);
 		userDao.create(newUser);
